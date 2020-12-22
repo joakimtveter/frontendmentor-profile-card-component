@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary: hsl(185, 75%, 39%);
+  --clr-secondary: hsl(229, 23%, 23%);
+  --clr-text: hsl(227, 10%, 46%);
+  --clr-neutral: hsl(0, 0%, 59%);
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+.profiles {
+  background-color: var(--clr-primary);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-size: contain;
+  background-position: right calc(50vw + 15%) bottom calc(50vh - 15vw), left calc(40vw + 25%) top calc(70vh - 10vw);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* ---------------------
+----- CARD STYLES ------
+----------------------*/
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 300px;
+  max-width: 350px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.card-header {
+  background-image: url(/images/bg-pattern-card.svg);
+  height: 140px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.profile-img {
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px white solid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(50%);
+}
+
+.name {
+  display: inline-block;
+  margin-top: 4em;
+  font-size: 18px;
+  padding-bottom: 0.7em;
+}
+
+.age {
+  display: inline-block;
+  padding-bottom: 0.7em;
+  color: var(--clr-text);
+}
+
+.location {
+  font-size: 14px;
+  padding-bottom: 1.5em;
+  color: var(--clr-neutral);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px var(--clr-neutral) solid;
+  padding: 30px 10px 0;
+}
+
+.stat-container p {
+  display: block;
+}
+
+.stats {
+  font-weight: 700;
+  padding-bottom: 0.4em;
+  color: var(--clr-secondary);
+}
+
+.stat-unit {
+  font-size: 12px;
+  color: var(--clr-neutral);
+  padding-bottom: 1em;
+}
+
+/* ---------------------
+--- CHALLENGE STYLES ---
+----------------------*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
